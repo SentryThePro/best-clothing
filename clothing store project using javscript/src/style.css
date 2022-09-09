@@ -1,0 +1,257 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family:poppins;
+   
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* ? -----------------style for navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(90deg,rgb(0, 0, 255),rgba(180, 18, 180, 0.671));
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+ 
+    position: sticky;
+    top: 0px;
+}
+.disc{
+    font-size: 40px;
+    text-align: center;
+    
+}
+span{
+    color: rgb(86, 243, 65);
+}
+/* ?------- style for cart */
+
+.cart{
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 5px 10px ;
+    color: black;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.cart-amount{   
+    position: realtive;
+
+    font-size: 15px;
+}
+
+/* ? style for shop on body ----------------------*/
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,255px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.item{
+    padding: 2px;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 2px 15px rgba(0, 0, 0, 0.507);
+    border-radius: 18px;  
+}
+.item img{
+    border-radius: 18px;
+    width: 100%;
+}
+.deatils{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pricing-quantity{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  
+} 
+.btns{
+    display: inline-flex;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.bi-dash-lg{
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(181, 8, 233);
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.bi-plus-lg{
+    background-color: rgb(233, 8, 158);
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+.quantity{
+    padding: 15px;
+    
+ 
+}
+
+
+/* ? make responsive---------------- */
+
+@media (max-width: 1024px) {
+.shop{
+    grid-template-columns: repeat(2,255px);
+
+}
+}
+
+
+@media (max-width: 623px) {
+    .shop{
+        grid-template-columns: repeat(1,255px);
+    
+    }
+    }
+    
+
+/* ? making hover for my shop items  */
+
+.item:hover{
+    box-shadow: none;
+}
+
+
+::-webkit-scrollbar{
+        width: 8px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 30px;
+}
+
+.text-center h2{
+    font-size: 70px;
+    color: rgb(204, 0, 255);
+}
+
+.text-center{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.homebtn{
+    padding: 5px 10px;
+    background-color: rgb(245, 10, 127);
+    border-radius: 8px;
+    border: 3px solid rgba(128, 0, 128, 0);
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.homebtn span{
+    color: rgb(255, 174, 0);
+}
+
+/* ? style s for my cart items  */
+
+.shopping-cart{
+        display: grid;
+        grid-template-columns: repeat(1,488px);
+      
+        justify-content: center;
+        gap: 15px;
+
+}
+
+
+.cart-item{
+    padding: 10px;
+    color: white;
+    border: 1px solid rgb(255, 174, 0);
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.384);
+}
+
+
+
+.x-btn{cursor: pointer;
+    color: rgba(255, 0, 0, 0.493);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2px 5px;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 6px;
+}
+.x-btn:hover{
+  color: red;
+}
+.title-price-x{
+
+    display: flex;
+    width: 378px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    
+
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item img{
+    border-radius: 6px;
+}
+
+
+.cart-item-price{
+    background-color: #fff;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.load{
+    display: grid;
+    justify-content: center;
+}
+
+
+
+
+
+

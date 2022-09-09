@@ -1,0 +1,62 @@
+body{
+   
+    background: #000;
+}
+
+/* ? style for my checkout btn AND CLEARCART BTN */
+
+
+.checkout{
+    padding: 5px 10px;
+    background-color: rgb(7, 241, 18);
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+color: rgb(0, 0, 0);
+
+}
+
+
+
+
+.clear-cart{
+    padding: 5px 10px;
+    background-color: rgb(238, 112, 9);
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
